@@ -180,7 +180,7 @@ span {
   color: white;
 }
 
-@media (min-width: 425px) {
+@media (min-width: 994px) {
     #maincard{
         display: flex;
         flex-direction: row;
