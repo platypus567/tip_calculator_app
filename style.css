@@ -181,4 +181,24 @@ span {
 }
 
 @media (min-width: 425px) {
+    #maincard{
+        display: flex;
+        flex-direction: row;
+        border-radius: 15px;
+    }
+    .firstBottomRow{
+        margin-top: 50px;
+    }
+    .amounts{
+        font-size: 40px;
+    }
+    #tipamtPar{
+        margin-top: 20px;
+    }
+    #customInput{
+        width: 130px;
+    }
+    .pars{
+        font-size: 24px;
+    }
 }
