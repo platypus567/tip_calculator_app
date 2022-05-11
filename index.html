@@ -41,24 +41,60 @@
       <div class="container" id="maincard">
         <p id="bill">Bill</p>
         <div class="text-center">
-          <img src="./images/icon-dollar.svg" alt="" id="dollarIcon">
-        <input type="number" name="" id="billInput" placeholder="0" onchange="updateBill(); calculateTip(bill,tipValue,peopleNum)"/>
-      </div>
+          <img src="./images/icon-dollar.svg" alt="" id="dollarIcon" />
+          <input
+            type="number"
+            name=""
+            id="billInput"
+            placeholder="0"
+            onchange="updateBill(); calculateTip(bill,tipValue,peopleNum)"
+          />
+        </div>
 
         <p id="selectTip">Select Tip %</p>
 
         <div class="row" id="firstRow">
-          <button class="tipPercent col-4" id="5" onclick="btnClick(5); calculateTip(bill,tipValue,peopleNum)">5%</button>
-          <button class="tipPercent col-4" id="10" onclick="btnClick(10); calculateTip(bill,tipValue,peopleNum)">10%</button>
+          <button
+            class="tipPercent col-4"
+            id="5"
+            onclick="btnClick(5); calculateTip(bill,tipValue,peopleNum)"
+          >
+            5%
+          </button>
+          <button
+            class="tipPercent col-4"
+            id="10"
+            onclick="btnClick(10); calculateTip(bill,tipValue,peopleNum)"
+          >
+            10%
+          </button>
         </div>
 
         <div class="row" id="secondRow">
-          <button class="tipPercent col-4" id="15" onclick="btnClick(15); calculateTip(bill,tipValue,peopleNum)">15%</button>
-          <button class="tipPercent col-4" id="25" onclick="btnClick(25); calculateTip(bill,tipValue,peopleNum)">25%</button>
+          <button
+            class="tipPercent col-4"
+            id="15"
+            onclick="btnClick(15); calculateTip(bill,tipValue,peopleNum)"
+          >
+            15%
+          </button>
+          <button
+            class="tipPercent col-4"
+            id="25"
+            onclick="btnClick(25); calculateTip(bill,tipValue,peopleNum)"
+          >
+            25%
+          </button>
         </div>
 
         <div class="row" id="thirdRow">
-          <button class="tipPercent col-4" id="50" onclick="btnClick(50); calculateTip(bill,tipValue,peopleNum)">50%</button>
+          <button
+            class="tipPercent col-4"
+            id="50"
+            onclick="btnClick(50); calculateTip(bill,tipValue,peopleNum)"
+          >
+            50%
+          </button>
           <input
             type="number"
             name=""
@@ -69,31 +105,39 @@
           />
         </div>
         <div id="superText">
-        <p id="people">Number of People</p>
-        <span id="warning">Can't be 0</span>
-      </div>
+          <p id="people">Number of People</p>
+          <span id="warning">Can't be 0</span>
+        </div>
         <div class="container" id="pplInpDiv">
           <div class="text-left">
-          <img src="./images/icon-person.svg" alt="" id="personIcon">
-        </div>
-          <input type="number" name="" id="peopleInput" placeholder="0" onchange="updatePeople(); calculateTip(bill,tipValue,peopleNum)"/>
+            <img src="./images/icon-person.svg" alt="" id="personIcon" />
+          </div>
+          <input
+            type="number"
+            name=""
+            id="peopleInput"
+            placeholder="0"
+            onchange="updatePeople(); calculateTip(bill,tipValue,peopleNum)"
+          />
         </div>
         <div class="container" id="bottomDiv">
-          
           <div class="row bottomRow">
-          <p id="tipamtPar" class="col-4 pars">Tip Amount <br><span class="subhead">/ person</span></p>
+            <p id="tipamtPar" class="col-4 pars">
+              Tip Amount <br /><span class="subhead">/ person</span>
+            </p>
 
-          <p id="tipAmtNum" class="col-4 amounts">$0.00</p>
-        </div>
+            <p id="tipAmtNum" class="col-4 amounts">$0.00</p>
+          </div>
 
           <div class="row bottomRow">
-          <p class="col-4 pars">Total <br><span class="subhead">/ person</span></p>
-          <p id="totalNum" class="col-4 amounts">$0.00</p>
-          
+            <p class="col-4 pars">
+              Total <br /><span class="subhead">/ person</span>
+            </p>
+            <p id="totalNum" class="col-4 amounts">$0.00</p>
           </div>
           <div class="container" id="resetDiv">
-          <button id="resetBtn" onclick="reset()">RESET</button>
-        </div>
+            <button id="resetBtn" onclick="reset()">RESET</button>
+          </div>
         </div>
       </div>
     </div>

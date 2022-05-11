@@ -4,56 +4,54 @@ html {
 }
 body {
   font-family: "Space Mono", sans-serif;
-  
+
   background-color: hsl(185, 41%, 84%);
   height: 100%;
-  
+
   color: hsl(186, 14%, 43%);
 }
-input{
-    color: hsl(183, 100%, 15%);
-    background-color: hsl(189, 41%, 97%);
-    border-color: transparent;
-    border-radius: 10px;
-    font-weight: 700;
+input {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(189, 41%, 97%);
+  border-color: transparent;
+  border-radius: 10px;
+  font-weight: 700;
 }
 #maindiv {
   display: flex;
   flex-direction: column;
   padding: 0px;
-  
 }
 
-#bottomDiv{
-    background-color: hsl(183, 100%, 15%);
-    color: white;
-    border-radius: 10px;
+#bottomDiv {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  border-radius: 10px;
 }
 
-#billInput{
-    margin-bottom: 20px;
+#billInput {
+  margin-bottom: 20px;
 }
 
-#billInput:hover{
-    border-color: hsl(172, 67%, 45%);
+#billInput:hover {
+  border-color: hsl(172, 67%, 45%);
 }
 #imgcontain {
   justify-content: center;
   padding-top: 30px;
   padding-bottom: 15px;
 }
-.tipPercent{
-    font-size: 24px;
-    background-color: hsl(183, 100%, 15%);
-    color: white;
-    border-color: transparent;
-    border-radius: 5px;
-    width: 125px;
-    box-shadow: 0 4px hsl(186, 14%, 43%);
+.tipPercent {
+  font-size: 24px;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  border-color: transparent;
+  border-radius: 5px;
+  width: 125px;
+  box-shadow: 0 4px hsl(186, 14%, 43%);
 }
-.tipPercent:hover{
-    background-color: hsl(162, 52%, 49%);
-    
+.tipPercent:hover {
+  background-color: hsl(162, 52%, 49%);
 }
 
 #maincard {
@@ -65,28 +63,28 @@ input{
   padding-bottom: 50px;
 }
 
-#firstRow{
-    display: flex;
-    justify-content: space-evenly;
+#firstRow {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-#secondRow{
-     justify-content: space-evenly;
-     padding-top: 10px;
-     padding-bottom: 10px;
+#secondRow {
+  justify-content: space-evenly;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-#thirdRow{
-    justify-content: space-evenly;
-    padding-bottom: 25px;
+#thirdRow {
+  justify-content: space-evenly;
+  padding-bottom: 25px;
 }
 #billInput {
   text-align: right;
   font-size: 24px;
   width: 84%;
 }
-#bill{
-    padding-left: 30px;
-    font-weight: 700;
+#bill {
+  padding-left: 30px;
+  font-weight: 700;
 }
 
 #customInput {
@@ -94,13 +92,11 @@ input{
   font-size: 24px;
   border-radius: 5px;
   width: 125px;
-  
 }
-#selectTip{
-    margin-left: 27px;
-    font-weight: 700;
+#selectTip {
+  margin-left: 27px;
+  font-weight: 700;
 }
-
 
 #peopleInput {
   text-align: right;
@@ -108,79 +104,81 @@ input{
   margin-bottom: 30px;
   width: 90%;
 }
-#pplInpDiv{
-    display: flex;
-    justify-content: center;
+#pplInpDiv {
+  display: flex;
+  justify-content: center;
 }
-#people{
-    font-weight: 700;
-    padding-left: 24px;
-    display: inline;
+#people {
+  font-weight: 700;
+  padding-left: 24px;
+  display: inline;
 }
-::placeholder{
-    font-weight: 700;
-    color: hsl(183, 100%, 15%);
-    padding-right: 5px;
-
+::placeholder {
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  padding-right: 5px;
 }
-#tipamtPar{
-    padding-top: 10px;
+#tipamtPar {
+  padding-top: 10px;
 }
-#resetBtn{
-    margin-bottom: 10px;
-    width: 95%;
-    background-color: hsl(172, 67%, 45%);
-    color: hsl(183, 100%, 15%);
-    font-weight: 700;
-    font-size: 24px;
-    border-color: transparent;
-    border-radius: 5px;
+#resetBtn {
+  margin-bottom: 10px;
+  width: 95%;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  font-size: 24px;
+  border-color: transparent;
+  border-radius: 5px;
 }
-#resetDiv{
-    display: flex;
-    justify-content: center;
-}
-
-.bottomRow{
-    justify-content: space-between;
+#resetDiv {
+  display: flex;
+  justify-content: center;
 }
 
-#tipAmtNum{
-    margin-top: 25px;
+.bottomRow {
+  justify-content: space-between;
 }
-.pars{
-    margin-left: 20px;
-    font-weight: 700;
+
+#tipAmtNum {
+  margin-top: 25px;
 }
-.amounts{
-    font-size: 24px;
-    font-weight: 700;
-    color: hsl(172, 67%, 45%);
+.pars {
+  margin-left: 20px;
+  font-weight: 700;
 }
-span{
-    color: hsl(186, 14%, 43%);
-    font-weight: 700;
+.amounts {
+  font-size: 24px;
+  font-weight: 700;
+  color: hsl(172, 67%, 45%);
 }
-#dollarIcon{
-    position:absolute;
-    margin-top: 12px;
-    margin-left: 10px;
+span {
+  color: hsl(186, 14%, 43%);
+  font-weight: 700;
 }
-#personIcon{
-    position: absolute;
-    margin-top: 12px;
-    margin-left: 10px;
+#dollarIcon {
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 10px;
 }
-#superText{
-    display: flex;
-    justify-content: space-between;
+#personIcon {
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 10px;
 }
-#warning{
-    margin-right: 20px;
-    color: red;
-    display: none;
+#superText {
+  display: flex;
+  justify-content: space-between;
 }
-#resetBtn:hover{
-    background-color: hsl(162, 52%, 49%);
-    color: white;
+#warning {
+  margin-right: 20px;
+  color: red;
+  display: none;
+}
+#resetBtn:hover {
+  background-color: hsl(162, 52%, 49%);
+  color: white;
+}
+
+@media (min-width: 425px) {
 }
