@@ -46,8 +46,8 @@ function updateCustom() {
 
 function calculateTip(b, t, p) {
   if (tipFlag == true && peopleFlag == true && billFlag == true) {
-    let finalTip = parseInt(((b * t) / p).toFixed(2));
-    let totalCost = ((b + finalTip) / p).toFixed(2);
+    let finalTip = ((b * t) / p).toFixed(2);
+    let totalCost = ((b + parseInt(finalTip)) / p).toFixed(2);
     tipNum.innerText = `$${finalTip}`;
     totalNums.innerText = `$${totalCost}`;
     console.log(finalTip);
