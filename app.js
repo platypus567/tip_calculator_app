@@ -12,7 +12,7 @@ let totalNums = document.querySelector('#totalNum');
 let tipNum = document.querySelector('#tipAmtNum');
 
 
-
+let allBtns = document.querySelectorAll('.tipPercent');
 
 
 function updateBill(){
@@ -23,7 +23,16 @@ function updateBill(){
 }
 function updatePeople(){
     peopleNum = parseInt(document.querySelector('#peopleInput').value);
-    peopleFlag = true;
+    if (peopleNum > 0){
+        peopleFlag = true;
+        document.querySelector('#peopleInput').style.borderColor = 'transparent';
+        document.querySelector('#warning').style.display = 'none';
+    } else{
+        peopleFlag = false;
+        document.querySelector('#peopleInput').style.borderColor = 'red';
+        document.querySelector('#warning').style.display = 'inline';
+    }
+    
     console.log(peopleNum);
 }
 
@@ -32,6 +41,8 @@ function btnClick(v){
     tipValue = (v)/100;
     console.log(tipValue)
     tipFlag = true;
+    
+    
 }
         
  
@@ -64,6 +75,7 @@ function reset(){
     totalNums.innerText = '$0.00';
     tipNum.innerText = '$0.00';
     totalNums.style.marginRight = '0';
+    document.querySelector('#billInput').value = 0;
 
 }
 
