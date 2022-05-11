@@ -1,37 +1,41 @@
-let bill = document.querySelector('#billInput').value;
-let billInterval = setInterval(updateBill, 10)
+let bill = 0;
+
 
 let billFlag = false;
 let peopleFlag = false;
 let tipFlag = false;
 let peopleNum = document.querySelector('#peopleInput').value;
-let peopleInterval = setInterval(updatePeople, 10);
+
 let tipValue = 0;
 
 let totalNums = document.querySelector('#totalNum');
 let tipNum = document.querySelector('#tipAmtNum');
 
-let updateTotals = setInterval(calculateTip(bill,tipValue,peopleNum),100);
+
+
+
 
 function updateBill(){
-    bill = document.querySelector('#billInput').value;
+    bill = parseInt(document.querySelector('#billInput').value);
+    console.log(bill)
     billFlag = true
     
 }
 function updatePeople(){
-    peopleNum = document.querySelector('#peopleInput').value;
+    peopleNum = parseInt(document.querySelector('#peopleInput').value);
     peopleFlag = true;
+    console.log(peopleNum);
 }
 
 
-document.querySelectorAll('.tipPercent').forEach(btn =>{
-    btn.addEventListener('click', event => {
-        tipValue = (btn.id)/100;
-        console.log(tipValue)
-        tipFlag = true;
-    })
+function btnClick(v){
+    tipValue = (v)/100;
+    console.log(tipValue)
+    tipFlag = true;
 }
-    )
+        
+ 
+    
 function updateCustom(){
 
     tipValue = (document.querySelector('#customInput').value)/100;
@@ -41,14 +45,26 @@ function updateCustom(){
 
 function calculateTip(b,t,p){
     if(tipFlag == true && peopleFlag == true && billFlag == true){
-        let finalTip = (b*t)/p;
-        let totalCost = (b+finalTip)/p;
+        let finalTip = parseInt(((b*t)/p).toFixed(2));
+        let totalCost = ((b + finalTip)/p).toFixed(2);
         tipNum.innerText = `$${finalTip}`;
         totalNums.innerText = `$${totalCost}`;
-        console.log(tipNum);
+        console.log(finalTip);
         console.log(totalCost);
+        if (parseInt(totalCost) > 99){
+            totalNums.style.marginRight = '35px';
+        }
     }
     
+}
+function reset(){
+    bill = 0;
+    tipValue = 0;
+    document.querySelector('#peopleInput').value = 0;
+    totalNums.innerText = '$0.00';
+    tipNum.innerText = '$0.00';
+    totalNums.style.marginRight = '0';
+
 }
 
 

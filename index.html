@@ -41,35 +41,35 @@
       <div class="container" id="maincard">
         <p id="bill">Bill</p>
         <div class="text-center">
-        <input type="number" name="" id="billInput" placeholder="0"/>
+        <input type="number" name="" id="billInput" placeholder="0" onchange="updateBill(); calculateTip(bill,tipValue,peopleNum)"/>
       </div>
 
         <p id="selectTip">Select Tip %</p>
 
         <div class="row" id="firstRow">
-          <button class="tipPercent col-4" id="5">5%</button>
-          <button class="tipPercent col-4" id="10">10%</button>
+          <button class="tipPercent col-4" id="5" onclick="btnClick(5); calculateTip(bill,tipValue,peopleNum)">5%</button>
+          <button class="tipPercent col-4" id="10" onclick="btnClick(10); calculateTip(bill,tipValue,peopleNum)">10%</button>
         </div>
 
         <div class="row" id="secondRow">
-          <button class="tipPercent col-4" id="15">15%</button>
-          <button class="tipPercent col-4" id="25">25%</button>
+          <button class="tipPercent col-4" id="15" onclick="btnClick(15); calculateTip(bill,tipValue,peopleNum)">15%</button>
+          <button class="tipPercent col-4" id="25" onclick="btnClick(25); calculateTip(bill,tipValue,peopleNum)">25%</button>
         </div>
 
         <div class="row" id="thirdRow">
-          <button class="tipPercent col-4" id="50">50%</button>
+          <button class="tipPercent col-4" id="50" onclick="btnClick(50); calculateTip(bill,tipValue,peopleNum)">50%</button>
           <input
             type="number"
             name=""
             id="customInput"
             placeholder="Custom"
             class="col-4"
-            onchange="updateCustom()"
+            onchange="updateCustom(); calculateTip(bill,tipValue,peopleNum)"
           />
         </div>
         <p id="people">Number of People</p>
         <div class="container" id="pplInpDiv">
-          <input type="number" name="" id="peopleInput" placeholder="0" />
+          <input type="number" name="" id="peopleInput" placeholder="0" onchange="updatePeople(); calculateTip(bill,tipValue,peopleNum)"/>
         </div>
         <div class="container" id="bottomDiv">
           
@@ -85,7 +85,7 @@
           
           </div>
           <div class="container" id="resetDiv">
-          <button id="resetBtn">RESET</button>
+          <button id="resetBtn" onclick="reset()">RESET</button>
         </div>
         </div>
       </div>
